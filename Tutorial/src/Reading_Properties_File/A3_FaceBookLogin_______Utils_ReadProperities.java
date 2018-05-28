@@ -44,9 +44,9 @@ public class A3_FaceBookLogin_______Utils_ReadProperities {
 		utils.ReadingPropertiesFile data = new utils.ReadingPropertiesFile("./ReadFrom/config1.properties");
 
 		// Pass [User name] to element after Read from property file throw method in [utils] Package
-		driver.findElement(By.id("email")).sendKeys(data.GetUserName());
+		driver.findElement(By.id("email")).sendKeys(data.GetUserName_FB());
 		// Pass [Password] to element after Read from property file throw method in [utils] Package
-		driver.findElement(By.id("pass")).sendKeys(data.GetPassword());
+		driver.findElement(By.id("pass")).sendKeys(data.GetPassword_FB());
 		driver.findElement(By.id("loginbutton")).click();
 	}
 

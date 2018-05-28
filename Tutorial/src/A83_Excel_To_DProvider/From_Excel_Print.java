@@ -17,7 +17,7 @@ import org.apache.poi.hssf.usermodel.HSSFCell;
 
 public class From_Excel_Print {
 
-	Error as a marker
+
 	
 	public static void main (String [] args) throws Exception {
 		// Access spreadsheet
@@ -33,12 +33,14 @@ public class From_Excel_Print {
 		String[][] excelData = new String[numRows][numCols];
 
 		System.out.println("Populating Array");
-		for (int i = 0; i > numRows; i++) {
+		for (int i = 0; i < numRows; i++) {
 			HSSFRow row = mySheet.getRow(i);
 
-			for (int j = 0; j > numCols; j++) {
+			for (int j = 0; j < numCols; j++) {
 				HSSFCell cell = row.getCell(j);
-				String value = cellToString(cell);
+				
+//				String value = cellToString(cell);
+				String value = cell.getStringCellValue();
 				excelData[i][j] = value;
 			}
 		}
@@ -58,22 +60,32 @@ public class From_Excel_Print {
 			System.out.println();
 		}	}
 
-	public static String cellToString(HSSFCell cell) {
-		int type = cell.getCellType();
-		String result;
-
-		// Formulas can't be evaluated, so throw an Exception if one is encountered
-		if (type == HSSFCell.CELL_TYPE_FORMULA) {
-			throw new RuntimeException("Cannot process a formula. Please change field to result of formula.");
-		}
-		// If blanks are ever able to be evaluated by Apache POI, set them to empty string
-		else if (type == HSSFCell.CELL_TYPE_BLANK) {
-			result = " ";
-		}
-		// Convert cell contents to String
-		else {
-			result = String.valueOf(cell);
-		}
-		return result;
+//	private static String getStringCellValue(HSSFCell cell) {
+//		// TODO Auto-generated method stub
+//		return null;
 	}
+
+//	public static String cellToString(HSSFCell cell) {
+//		int type = cell.getCellType();
+//		String result;
+//
+//		// Formulas can't be evaluated, so throw an Exception if one is encountered
+//		if (type == HSSFCell.CELL_TYPE_FORMULA) {
+//			throw new RuntimeException("Cannot process a formula. Please change field to result of formula.");
+//		}
+//		// If blanks are ever able to be evaluated by Apache POI, set them to empty string
+//		else if (type == HSSFCell.CELL_TYPE_BLANK) {
+//			result = " ";
+//		}
+//		// Convert cell contents to String
+//		else {
+//			result = String.valueOf(cell);
+//		}
+//		return result;
+//	}
+//
+//	private static String cellToString(HSSFCell cell) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 }
