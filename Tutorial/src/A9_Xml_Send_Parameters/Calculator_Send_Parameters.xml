@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite guice-stage="DEVELOPMENT" name="Default suite" >
+	<parameter name="url" value="https://juliemr.github.io/protractor-demo/" />
+	
+	<test verbose="1" name="chrome">     
+    <parameter name="browser" value="firefox" />
+   
+  <packages><package name="A9_Xml_Send_Parameters"/></packages>
+     
+ 
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

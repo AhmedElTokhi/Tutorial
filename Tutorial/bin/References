@@ -1,0 +1,65 @@
+TestNG Reference
+================
+http://testng.org/doc/documentation-main.html
+http://testng.org/doc/documentation-main.html#testng-xml
+----------------------------------
+
+Converter timestamp to human time
+=================================
+https://www.epochconverter.com/
+--------------------------
+
+Find Element and Elements Commands
+==================================
+course Presentation day 3.
+http://toolsqa.com/selenium-webdriver/findelement-and-findelements-command/
+
+Actions:
+========
+https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html
+----------------------------------
+composite actions:
+==================
+(click-and-hold, double-click, contextClick, drag-and-drop, drag-and-drop-by, key-down, key-up, move-by-offset, move-to-element, release)
+
+https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html
+https://github.com/semperos/clj-webdriver/wiki/Composite-Actions
+https://www.guru99.com/keyboard-mouse-events-files-webdriver.html
+https://stackoverflow.com/questions/29071144/wbdriver-actions-build-perform
+----------------------------------
+
+Find Element by CSS and XPath:
+==============================
+http://www.way2automation.com/selenium-webdriver-xpath-vs-css.php
+----------------------------------
+
+Selenium JS executer
+=====================
+https://www.seleniumhq.org/docs/03_webdriver.jsp#using-javascript
+sample: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+----------------------------------
+::Note:: Selenium not deal with Flash.
+
+Send java file configuration to script:
+=======================================
+1- by XML file as defined in tutorial sample.
+2- by property file. Use link (https://www.mkyong.com/java/java-properties-file-examples/).
+3- by configuration file.
+----------------------------------
+Open csv file
+=============
+http://opencsv.sourceforge.net/
+https://www.youtube.com/watch?v=l1dfVwLqaX8
+#########################
+Need to read data from following resource and pass it to dataProvider. 
+1- CSV. .....done
+2- TXT. .....done
+3- DB.	....Done
+
+4- Excel.
+	http://toolsqa.com/selenium-webdriver/testng-data-provider-excel/
+	https://www.uvdesk.com/en/blog/passing-data-dataprovider-excel-sheet-testng/
+	Eng.mahmoud Utils Package
+3- XML.
+
+#########################
